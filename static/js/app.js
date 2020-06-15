@@ -55,7 +55,7 @@ function trimData(data)
 }
 
 // setting up our events
-filters.forEach(filter=> filter.on('change', filterData));
+d3.select("ul").on('change', filterData);
 selectButton.on('click', filterData);
 
 //setting up original table
